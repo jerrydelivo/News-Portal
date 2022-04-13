@@ -4,29 +4,26 @@
 
 main {
   display: grid;
-  margin-left: 10%;
-  margin-right: 10%;
-  grid-template-columns: 1fr 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-columns: 3fr 1fr;
   background-color: #e5e5e5;
 }
 
-.flex6 {
+.flex3 {
   display: flex;
-  margin-left: 5%;
-}
-
-.flex2 {
-  display: flex;
-  flex-wrap: wrap;
   margin-right: 1%;
 }
 
 .flexItem {
-  max-width: 310px;
-  height: 45%;
+  border: 1px solid red;
+  width: 30%;
+  min-height: 45%;
   padding: 16px;
   background-color: #ffffff;
   font-family: Inter;
+  margin-left: 1%;
+  margin-bottom: 1%;
 }
 
 .flexItem img {
@@ -42,18 +39,24 @@ main {
   text-align: center;
 }
 
+.flexItem h3 {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  background-color: black;
+  color: white;
+  font-family: "Inter";
+  font-size: 0.7rem;
+  padding: 2%;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.flexItem time {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  color: #626262;
+}
+
 @media only screen and (max-width: 1500px) {
-  .flex6 {
-    flex-wrap: wrap;
-  }
-
-  .flex2 {
-    flex-wrap: nowrap;
-  }
-
-  .flexItem {
-    height: auto;
-    width: 100%;
-    margin: 1%;
-  }
 }
