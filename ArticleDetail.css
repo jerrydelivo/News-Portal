@@ -4,12 +4,9 @@ html {
 
 main {
   display: grid;
-  margin-left: 73px;
-  margin-right: 73px;
-  grid-template-columns: 1fr 300px;
-}
-
-.main-left {
+  margin-left: 100px;
+  margin-right: 100px;
+  grid-template-columns: 1fr 400px;
 }
 
 .img-row1 {
@@ -61,4 +58,8 @@ h3 {
   font-family: "Playfair Display", serif;
   line-height: 3.199px;
   margin-top: 40px;
+}
+
+.ad-right {
+  text-align: center;
 }

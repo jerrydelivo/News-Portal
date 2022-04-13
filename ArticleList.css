@@ -1,0 +1,59 @@
+.html {
+  font-size: 10px;
+}
+
+main {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-template-columns: 1fr 400px;
+  background-color: #e5e5e5;
+}
+
+.flex6 {
+  display: flex;
+  margin-left: 5%;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1%;
+}
+
+.flexItem {
+  max-width: 310px;
+  height: 45%;
+  padding: 16px;
+  background-color: #ffffff;
+  font-family: Inter;
+}
+
+.flexItem img {
+  height: auto;
+  width: 100%;
+}
+
+.flexItem p {
+  font-size: 0.85rem;
+}
+
+.ad-right {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  .flex6 {
+    flex-wrap: wrap;
+  }
+
+  .flex2 {
+    flex-wrap: nowrap;
+  }
+
+  .flexItem {
+    height: auto;
+    width: 100%;
+    margin: 1%;
+  }
+}
