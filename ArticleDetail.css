@@ -4,9 +4,12 @@ html {
 
 main {
   display: grid;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
   grid-template-columns: 1fr 400px;
+}
+
+.main-left {
 }
 
 .img-row1 {
@@ -41,6 +44,7 @@ time {
   font-family: Inter;
   font-size: 1.2rem;
   line-height: 1.452rem;
+  color: #626262;
 }
 
 pre,
