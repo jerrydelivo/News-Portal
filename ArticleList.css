@@ -10,9 +10,18 @@ main {
   background-color: #e5e5e5;
 }
 
+.main-left {
+  text-align: center;
+}
+
+.main-left img {
+  margin: 1% 0;
+}
+
 .flex3 {
   display: flex;
   margin-right: 1%;
+  text-align: start;
 }
 
 .flexItem {
