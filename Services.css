@@ -144,89 +144,60 @@ footer {
   margin-top: 40px;
 }
 
-.middleLeft {
-  text-align: center;
+.mainHeader h1 {
+  margin-top: -1rem;
+  font-size: 3rem;
 }
 
-.imageGallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-}
-
-.imageGallery article {
-  padding: 16px;
-  background-color: #ffffff;
-  font-family: Inter;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  position: relative;
-  border-radius: 8px;
-  border: 1px solid #0000001a;
-  text-align: start;
-  max-width: 380px;
-}
-
-.imageGallery img {
-  height: auto;
-  width: 100%;
-  transition: transform 1s ease;
-}
-
-.imageContainer {
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.imageGallery img:hover {
-  transform: scale(1.1);
-}
-
-.imageGallery p {
-  font-size: 1.6rem;
-}
-
-.adRight {
-  margin-top: 15px;
-  text-align: end;
-}
-
-.imageGallery h3 {
-  position: absolute;
-  top: 2%;
-  left: 6%;
-  background-color: black;
-  color: white;
-  font-family: "Inter";
+.mainHeader h2 {
   font-size: 1.5rem;
-  padding: 2%;
+  font-weight: normal;
+}
+
+.serviceSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.serviceArticle {
+  background-color: white;
+  padding: 0 2rem 2rem 2rem;
+  width: 20%;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
   border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.5s ease-out;
-  background: linear-gradient(to left, black 50%, red 50%) right;
-  background-size: 200%;
-  z-index: 1;
 }
 
-.imageGallery h3:hover {
-  background-position: left;
-}
-
-.imageGallery h2 {
+.serviceArticle h3 {
   font-size: 2.5rem;
 }
 
-.imageGallery time {
-  font-family: "Inter";
-  font-size: 1.6rem;
-  color: #626262;
+.serviceArticle p {
+  font-size: 1.5rem;
 }
 
-.mainAdd {
-  margin: 30px 0;
+.serviceArticle h4 {
+  background: #ececec;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  padding: 8px 5px 0 5px;
+  font-size: 1.5rem;
 }
 
-.mainAdd :first-child {
-  margin-top: -15px;
+.serviceArticle button {
+  background: #de1515;
+  color: white;
+  font-size: 2.2rem;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  line-height: 4rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.serviceArticle button:hover {
+  background: #b41111;
 }
