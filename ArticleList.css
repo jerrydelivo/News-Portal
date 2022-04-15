@@ -41,7 +41,7 @@ body {
 .headerBottom span {
   background-color: #de1515;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 5px;
   font-weight: 300;
 }
@@ -71,7 +71,7 @@ footer {
 .footerTop span {
   background-color: #de1515;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 5px;
   font-weight: 300;
 }
@@ -88,7 +88,7 @@ footer {
   background: #0000000a;
   height: 40px;
   width: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -148,18 +148,14 @@ footer {
   text-align: center;
 }
 
-.middle-left img {
-  margin: 1% 0;
-}
-
-.imageContainer {
+.imageGallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 }
 
-.imageContainer article {
+.imageGallery article {
   padding: 16px;
   background-color: #ffffff;
   font-family: Inter;
@@ -172,12 +168,22 @@ footer {
   max-width: 380px;
 }
 
-.imageContainer img {
+.imageGallery img {
   height: auto;
   width: 100%;
+  transition: transform 1s ease;
 }
 
-.imageContainer p {
+.imageContainer {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imageGallery img:hover {
+  transform: scale(1.1);
+}
+
+.imageGallery p {
   font-size: 1.6rem;
 }
 
@@ -186,7 +192,7 @@ footer {
   text-align: end;
 }
 
-.imageContainer h3 {
+.imageGallery h3 {
   position: absolute;
   top: 2%;
   left: 6%;
@@ -195,15 +201,23 @@ footer {
   font-family: "Inter";
   font-size: 1.5rem;
   padding: 2%;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 600;
+  transition: background 0.5s ease-out;
+  background: linear-gradient(to left, black 50%, red 50%) right;
+  background-size: 200%;
+  z-index: 1;
 }
 
-.imageContainer h2 {
+.imageGallery h3:hover {
+  background-position: left;
+}
+
+.imageGallery h2 {
   font-size: 2.5rem;
 }
 
-.imageContainer time {
+.imageGallery time {
   font-family: "Inter";
   font-size: 1.6rem;
   color: #626262;
@@ -215,7 +229,4 @@ footer {
 
 .mainAdd :first-child {
   margin-top: -15px;
-}
-
-@media only screen and (max-width: 1500px) {
 }
