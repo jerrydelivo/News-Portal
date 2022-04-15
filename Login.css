@@ -64,8 +64,8 @@ nav.categoryNav h2 a {
 /* ----------- FOOTER -------------- */
 
 footer {
-  margin-left: 25px;
-  padding: 0 5vw;
+  padding: 0 calc(5vw + 25px);
+  background-color: white;
 }
 
 .footerTop span {
@@ -173,11 +173,13 @@ footer {
 .login-form input[type="email"],
 .login-form input[type="password"] {
   display: block;
+  width: 100%;
   line-height: 5rem;
   border: 1px;
   border-radius: 8px;
   font-size: 2.5rem;
   transition: border 0.4 ease;
+  box-sizing: border-box;
 }
 
 .login-form input[type="email"]:hover,
@@ -192,21 +194,19 @@ footer {
 
 .login-form input[type="email"] {
   background: white url(images/duck.png) no-repeat scroll 7px 13px;
-  margin-bottom: 25px;
   padding-left: 30px;
-  width: calc(100% - 30px);
+  margin-bottom: 25px;
 }
 
 .login-form input[type="password"] {
   background: white url(images/lock.png) no-repeat scroll 7px 13px;
   padding-left: 30px;
-  width: calc(100% - 30px);
 }
 
 .login-form input[type="submit"] {
   background-color: #de1515;
   color: white;
-  width: 101%;
+  width: 100%;
   border: 1px;
   border-radius: 8px;
   line-height: 5rem;
@@ -230,7 +230,7 @@ footer {
 
 .login-form .create-acc {
   background-color: #ededed;
-  width: 101%;
+  width: 100%;
   border-radius: 8px;
   border: 1px;
   line-height: 5rem;

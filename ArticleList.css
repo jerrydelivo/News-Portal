@@ -64,8 +64,8 @@ nav.categoryNav h2 a {
 /* ----------- FOOTER -------------- */
 
 footer {
-  margin-left: 25px;
-  padding: 0 5vw;
+  padding: 0 calc(5vw + 25px);
+  background-color: white;
 }
 
 .footerTop span {
